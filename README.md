@@ -4,7 +4,6 @@
 
 This is a backend service for managing digital wallets. It supports wallet creation, funding, withdrawals, transfers, and transaction management.
 
----
 
 ## Features
 
@@ -18,7 +17,7 @@ This is a backend service for managing digital wallets. It supports wallet creat
 * Idempotency support (prevents duplicate transactions)
 * Optimistic locking for concurrency safety
 
----
+
 
 ##  Tech Stack
 
@@ -29,30 +28,30 @@ This is a backend service for managing digital wallets. It supports wallet creat
 * Docker
 * Swagger (OpenAPI)
 
----
+
 
 ## Setup Instructions
 
 ### 1. Clone repo
 
-```bash
+
 git clone https://github.com/your-username/wallet-service.git
-```
+
 
 ### 2. Run application
 
-```bash
+
 mvn clean install
 java -jar target/wallet.jar
-```
+
 
 ### 3. Swagger UI
 
-```
-http://localhost:8080/swagger-ui.html
-```
 
----
+http://localhost:8080/swagger-ui.html
+
+
+
 
 ## API Endpoints
 
@@ -75,22 +74,22 @@ http://localhost:8080/swagger-ui.html
 * **Transactional Integrity** ensures atomic transfers
 * Clean layered architecture (Controller → Service → Repository)
 
----
+
 
 ##  Testing
 
 Basic unit tests included using Spring Boot Test.
 
----
+
 
 ##  Docker
 
-```bash
+
 docker build -t wallet-app .
 docker run -p 8080:8080 wallet-app
-```
 
----
+
+
 
 ## Assumptions
 
@@ -98,8 +97,7 @@ docker run -p 8080:8080 wallet-app
 * Transactions are immutable except reversal state
 * No authentication implemented (can be added)
 
----
 
 ## Author
 
-Your Name
+Olaleye Timothy
