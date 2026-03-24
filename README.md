@@ -22,7 +22,7 @@ This is a backend service for managing digital wallets. It supports wallet creat
 ##  Tech Stack
 
 * Java 17 (LTS)
-* Spring Boot 3.5.x
+* Spring Boot 3.5.11
 * Spring Data JPA
 * PostgreSQL
 * Docker
